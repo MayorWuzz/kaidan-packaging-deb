@@ -16,11 +16,13 @@ Build-Depends: debhelper (>= 9),
                libboost-signals-dev,
                qtdeclarative5-dev,
                qttools5-dev,
+               qtbase5-dev,
+               kirigami2-dev,
                cmake
 Standards-Version: 3.9.8
 Homepage: https://github.com/kaidanim/kaidan/
-Vcs-Git: git://github.com/kaidanim/kaidan.git
-Vcs-Browser: https://github.com/kaidanim/kaidan/
+Vcs-Git: git://github.com/kaidanim/packaging_deb.git
+Vcs-Browser: https://github.com/kaidanim/packaging_deb/
 
 Package: kaidan
 Architecture: any
@@ -31,10 +33,11 @@ Depends: libqt5quick5,
          libqt5network5,
          libqt5gui5,
          libqt5core5a,
+         libqt5sql5-sqlite,
          libswiften3,
          libboost-signals1.58.0,
          qml-module-qtquick-controls2,
-         qml-module-org-kde-kirigami,
+         qml-module-org-kde-kirigami2,
          ${misc:Depends},
          ${shlibs:Depends}
 Description: Simple, user-friendly Jabber/XMPP client for every device
